@@ -1,0 +1,28 @@
+.showtime-carousel {
+  padding: 0 30px;
+}
+
+.showtime-carousel .showtime-image {
+  padding: 4px;
+  margin: 10px;
+}
+
+.showtime-carousel .showtime-image img {
+  width: 100%;
+  height: auto;
+  outline: solid 1px transparent;
+  border: 1px solid #fff;
+  box-shadow: rgba(0, 0, 0, .13) 0 1px 14px, rgba(0, 0, 0, .12) 0 0 0 1px;
+}
+
+.showtime-carousel .slick-dots li {
+  margin: 0;
+}
+
+.showtime-carousel .slick-dots li button:before {
+  font-size: 16px;
+}
+
+.showtime-carousel .slick-prev:before, .showtime-carousel .slick-next:before {
+  color: #000;
+}
