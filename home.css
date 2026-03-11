@@ -1,0 +1,19 @@
+:root{
+    --c_primary:#9f8353;
+    --fs_40:40px;
+}
+.fs_40{
+    font-size: var(--fs_40);
+}
+
+.main_title{
+    font-family: sora;
+    color: var(--c_primary);
+    font-size: 38px;
+    line-height: 1;
+}
+.main_title b{
+    font-size: 92px;
+    
+    line-height: 1;
+}
