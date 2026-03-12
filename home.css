@@ -1,64 +1,200 @@
-:root{
-    --c_primary:#9f8353;
-    --c_white:#ffffff;
+:root {
+    --c_primary: #9f8353;
+    --c_white: #ffffff;
+    --c_danger: #ec151f;
 
-    --fs_38:38px;
-    --fs_40:40px;
+
+    --fs_38: 38px;
+    --fs_40: 40px;
+    --fs_67: 67px;
 
     --m_20: 20px;
 }
-.fs_40{
+
+.c_primary {
+    color: var(--c_primary);
+}
+
+.c_white {
+    color: var(--c_white);
+}
+
+.fs_40 {
     font-size: var(--fs_40);
 }
 
-.mb_20{
+.mb_20 {
     margin-bottom: var(--m_20);
 }
 
 /* intro section */
-.intro_section{
+.intro_section {
     padding: 5rem 0rem;
 }
-.main_heading{
+
+.main_heading {
+    font-size: 38px;
     font-family: sora;
     color: var(--c_primary);
-    font-size: var(--fs_38);
     line-height: 1;
     margin-left: -2.5em;
+    text-align: right;
 }
-.main_heading b{
+
+.main_heading b {
     font-size: 2.4211em;
     line-height: 1;
 }
-.section_heading{
-    font-size: var(--fs_40);
+
+.main_heading::after {
+    content: "";
+    display: block;
+    width: 81px;
+    height: 4px;
+    background-color: var(--c_danger);
+    margin-top: 28px;
+    margin-left: auto;
+}
+.section_heading {
+    font-size: 40px;
     margin-bottom: 0.5em;
 }
-.section_heading img{
-    height: 2em;
+
+.section_heading img {
+    width: 1.6em;
     display: inline;
+    vertical-align: middle;
 }
-.section_content p{
+
+.section_content p {
+    font-size: 17px;
     text-align: justify;
     margin-bottom: 1em;
 }
 
 /* how we work section */
-.hww_section{
+.hww_section {
     border: 1px solid var(--c_primary);
     border-radius: 0 120px 0 0;
     padding: 112px 60px 70px;
+    background-repeat: no-repeat;
+    background-size: auto 30%, cover;
 }
 
-.hww_heading{
-    font-size: var(--fs_67);
+.hww_heading {
     font-size: 67px;
     letter-spacing: -1px;
     color: var(--c_white);
     font-weight: 600;
     font-family: "Prompt";
-    filter: drop-shadow(1.439px 1.389px 0px rgba(0,0,0,0.77));
+    filter: drop-shadow(1.439px 1.389px 0px rgba(0, 0, 0, 0.77));
 }
-.hww_spacing{
+
+.hww_spacing {
     height: 400px;
+}
+
+.hww_card {
+    color: var(--c_white);
+    border-radius: 0px 60px 0px 0px;
+    padding: 30px;
+    background-color: #867244b6;
+    height: 100%;
+}
+
+.hww_card_title {
+    font-size: 44px;
+    letter-spacing: -3px;
+    line-height: 48px;
+    color: var(--c_white);
+    font-weight: 400;
+    font-family: "Sora";
+    filter: drop-shadow(2.158px 2.084px 0px #000000);
+}
+
+.hww_card_title b {
+    font-size: 1.2273em;
+}
+
+.hww_card_title::after {
+    content: "";
+    display: block;
+    width: 81px;
+    height: 4px;
+    background-color: var(--c_danger);
+    margin: 28px 0px;
+}
+
+.hww_card_desc {
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--c_white);
+    font-weight: 400;
+    font-family: "Prompt";
+    filter: drop-shadow(2.158px 2.084px 0px #000000);
+}
+
+/* services section */
+.services_section {
+    padding: 100px 0px;
+}
+
+/* stats section */
+
+.stats_section {
+    border: 1px solid var(--c_primary);
+    border-radius: 0 120px 0 0;
+    padding: 64px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.stat_item{
+    text-align: center;
+}
+.stat_number {
+    font-size: 130px;
+    letter-spacing: -8px;
+    line-height: 90px;
+    margin-bottom: 12px;
+}
+
+.stat_number b {
+    color: var(--c_white);
+    font-weight: 700;
+    font-family: "Sora";
+    filter: drop-shadow(2.158px 2.084px 0px rgba(0, 0, 0, 0.77));
+}
+
+.stat_number sup {
+    color: var(--c_danger);
+    /* font-size: 0.9em;
+    line-height: 0.3; */
+}
+
+.stat_description {
+    font-size: 27px;
+    letter-spacing: -1px;
+    color: var(--c_white);
+    font-weight: 600;
+    font-family: "Prompt";
+    filter: drop-shadow(2.158px 2.084px 0px rgba(0, 0, 0, 0.77));
+}
+
+/*  */
+.main_heading2 b {
+    font-size: 2.2em;
+}
+.main_heading2 span{
+    font-size: 1.5em;
+}
+
+/* intro section 2 */
+.intro_section2 {
+    padding: 5rem 0rem 0rem;
+}
+
+/* References section */
+.references_section {
+    padding: 2rem 0rem;
 }
