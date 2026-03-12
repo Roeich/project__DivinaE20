@@ -86,6 +86,24 @@
         font-size: 15px;
     }
 }
+@media(max-width:1399.98px) {
+    .main_heading {
+        font-size: 26px;
+    }
+
+    .section_heading {
+        font-size: 26px;
+    }
+}
+@media(max-width:1199.98px) {
+    .main_heading {
+        font-size: 24px;
+    }
+
+    .section_heading {
+        font-size: 24px;
+    }
+}
 
 /* how we work section */
 .hww_section {
@@ -357,5 +375,11 @@
         font-size: 46px;
         gap: 40px;
         margin-bottom: 70px;
+    }
+}
+
+@media(max-width:991.98px){
+    .border_md_none{
+        border-right: none !important;
     }
 }
