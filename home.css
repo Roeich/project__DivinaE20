@@ -2,13 +2,6 @@
     --c_primary: #9f8353;
     --c_white: #ffffff;
     --c_danger: #ec151f;
-
-
-    --fs_38: 38px;
-    --fs_40: 40px;
-    --fs_67: 67px;
-
-    --m_20: 20px;
 }
 
 .c_primary {
@@ -17,14 +10,6 @@
 
 .c_white {
     color: var(--c_white);
-}
-
-.fs_40 {
-    font-size: var(--fs_40);
-}
-
-.mb_20 {
-    margin-bottom: var(--m_20);
 }
 
 /* hero section */
@@ -153,7 +138,8 @@
     color: var(--c_white);
     font-weight: 600;
     font-family: "Prompt";
-    filter: drop-shadow(1.439px 1.389px 0px rgba(0, 0, 0, 0.77));
+    -webkit-filter: drop-shadow(1.439px 1.389px 0px rgba(0, 0, 0, 0.77));
+            filter: drop-shadow(1.439px 1.389px 0px rgba(0, 0, 0, 0.77));
 }
 
 .hww_spacing {
@@ -175,7 +161,8 @@
     color: var(--c_white);
     font-weight: 400;
     font-family: "Sora";
-    filter: drop-shadow(2.158px 2.084px 0px #000000);
+    -webkit-filter: drop-shadow(2.158px 2.084px 0px #000000);
+            filter: drop-shadow(2.158px 2.084px 0px #000000);
 }
 
 .hww_card_title b {
@@ -197,7 +184,8 @@
     color: var(--c_white);
     font-weight: 400;
     font-family: "Prompt";
-    filter: drop-shadow(2.158px 2.084px 0px #000000);
+    -webkit-filter: drop-shadow(2.158px 2.084px 0px #000000);
+            filter: drop-shadow(2.158px 2.084px 0px #000000);
 }
 
 @media(max-width:1529.98px) {
@@ -275,7 +263,8 @@
     color: var(--c_white);
     font-weight: 700;
     font-family: "Sora";
-    filter: drop-shadow(2.158px 2.084px 0px rgba(0, 0, 0, 0.77));
+    -webkit-filter: drop-shadow(2.158px 2.084px 0px rgba(0, 0, 0, 0.77));
+            filter: drop-shadow(2.158px 2.084px 0px rgba(0, 0, 0, 0.77));
 }
 
 .stat_number sup {
@@ -290,7 +279,8 @@
     color: var(--c_white);
     font-weight: 600;
     font-family: "Prompt";
-    filter: drop-shadow(2.158px 2.084px 0px rgba(0, 0, 0, 0.77));
+    -webkit-filter: drop-shadow(2.158px 2.084px 0px rgba(0, 0, 0, 0.77));
+            filter: drop-shadow(2.158px 2.084px 0px rgba(0, 0, 0, 0.77));
 }
 
 @media(max-width:1529.98px) {
@@ -378,7 +368,8 @@
 .contact_icon {
     width: 100px;
     height: 100px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .contact_info {
@@ -391,8 +382,12 @@
 .footer_social_links {
     font-size: 55px;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 48px;
     margin-bottom: 100px;
     padding-left: 0px;
