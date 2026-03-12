@@ -1,19 +1,64 @@
 :root{
     --c_primary:#9f8353;
+    --c_white:#ffffff;
+
+    --fs_38:38px;
     --fs_40:40px;
+
+    --m_20: 20px;
 }
 .fs_40{
     font-size: var(--fs_40);
 }
 
-.main_title{
+.mb_20{
+    margin-bottom: var(--m_20);
+}
+
+/* intro section */
+.intro_section{
+    padding: 5rem 0rem;
+}
+.main_heading{
     font-family: sora;
     color: var(--c_primary);
-    font-size: 38px;
+    font-size: var(--fs_38);
+    line-height: 1;
+    margin-left: -2.5em;
+}
+.main_heading b{
+    font-size: 2.4211em;
     line-height: 1;
 }
-.main_title b{
-    font-size: 92px;
-    
-    line-height: 1;
+.section_heading{
+    font-size: var(--fs_40);
+    margin-bottom: 0.5em;
+}
+.section_heading img{
+    height: 2em;
+    display: inline;
+}
+.section_content p{
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+/* how we work section */
+.hww_section{
+    border: 1px solid var(--c_primary);
+    border-radius: 0 120px 0 0;
+    padding: 112px 60px 70px;
+}
+
+.hww_heading{
+    font-size: var(--fs_67);
+    font-size: 67px;
+    letter-spacing: -1px;
+    color: var(--c_white);
+    font-weight: 600;
+    font-family: "Prompt";
+    filter: drop-shadow(1.439px 1.389px 0px rgba(0,0,0,0.77));
+}
+.hww_spacing{
+    height: 400px;
 }
